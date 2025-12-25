@@ -62,7 +62,7 @@ explore: pedidos {
 
   join: vendedores {
     type: left_outer
-    sql_on: ${mercado.id_mercado} = ${vendedores.region};;
+    sql_on: ${mercado.region} = ${vendedores.region};;
     relationship: many_to_one
 
 
